@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langkah-langkah Konfigurasi Mikrotic </title>
+    <link rel="stylesheet" href="laporanstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Laporan Praktikum II</h1>
+            <h2>Sistem Paralel dan Terdistribusi</h2>
+            <p class="mikrotik-title"><strong>LANGKAH-LANGKAH KONFIGURASI MIKROTIK MENGGUNAKAN WINBOX</strong></p>
+            <p>Disusun oleh:</p>
+            <p class="author-name"><strong>Chairul Huda Lestari | 2208001010013</strong></p>
+            <p>Program Studi DIII Manajemen Informatika</p>
+            <p>Jurusan Informatika</p>
+            <p>Fakultas Matematika dan Ilmu Pengetahuan Alam</p>
+            <p>Universitas Syiah Kuala</p>
+            <p>Banda Aceh, Oktober 2024</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <h2>Pendahuluan</h2>
+        <p>Konfigurasi Mikrotik menggunakan Winbox merupakan salah satu cara yang paling mudah dan intuitif untuk mengelola perangkat Mikrotik. Winbox adalah aplikasi berbasis Windows yang dirancang untuk mengonfigurasi dan memonitor perangkat Mikrotik dengan antarmuka grafis yang ramah pengguna.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Langkah-Langkah Konfigurasi Mikrotik Menggunakan Winbox</h2>
+        <ol>
+            <li>
+                <strong>Unduh dan Instal Winbox:</strong> 
+                <span>Kunjungi situs resmi Mikrotik untuk mengunduh aplikasi Winbox.</span>
+            </li>
+            <li>
+                <strong>Jalankan Winbox:</strong> 
+                <span>Buka aplikasi Winbox yang telah diinstal. Anda akan melihat daftar perangkat Mikrotik yang terhubung di jaringan.</span>
+            </li>
+            <li>
+                <strong>Koneksi ke Router:</strong> 
+                <span>Pilih router Mikrotik yang ingin Anda konfigurasi dan klik dua kali. Masukkan username dan password. Username default adalah "admin" dan password kosong.</span>
+            </li>
+            <li>
+                <strong>Konfigurasi IP Address:</strong> 
+                <span>Masuk ke menu <strong>IP > Addresses</strong>. Klik tombol "Add" dan masukkan IP address serta interface yang akan digunakan, misalnya <code>192.168.88.1/24</code> pada ether1.</span>
+            </li>
+            <li>
+                <strong>Konfigurasi DHCP:</strong> 
+                <span>Masuk ke menu <strong>IP > DHCP Server</strong>. Buat DHCP server baru dengan menambahkan interface yang digunakan dan rentang IP address yang ingin diberikan kepada klien.</span>
+            </li>
+            <li>
+                <strong>Konfigurasi NAT:</strong> 
+                <span>Masuk ke menu <strong>IP > Firewall > NAT</strong>. Tambahkan aturan baru untuk memungkinkan NAT seperti srcnat untuk mengalirkan trafik dari jaringan internal ke internet.</span>
+            </li>
+            <li>
+                <strong>Monitoring:</strong> 
+                <span>Gunakan tab <strong>Interfaces</strong> atau <strong>Resources</strong> untuk melihat status interface, trafik jaringan, dan penggunaan sumber daya router secara real-time.</span>
+            </li>
+        </ol>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Chairul Huda Lestari, Universitas Syiah Kuala</p>
+    </footer>
+
+</body>
+</html>

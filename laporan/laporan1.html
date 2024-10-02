@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikrotik dan Winbox</title>
+    <link rel="stylesheet" href="laporanstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Laporan Praktikum I</h1>
+            <h2>Sistem Paralel dan Terdistribusi</h2>
+            <p class="mikrotik-title"><strong>MIKROTIC DAN WINBOX</strong></p>
+            <p>Disusun oleh:</p>
+            <p class="author-name"><strong>Chairul Huda Lestari | 2208001010013</strong></p>
+            <p>Program Studi DIII Manajemen Informatika</p>
+            <p>Jurusan Informatika</p>
+            <p>Fakultas Matematika dan Ilmu Pengetahuan Alam</p>
+            <p>Universitas Syiah Kuala</p>
+            <p>Banda Aceh, Oktober 2024</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <h2>Pendahuluan</h2>
+        <p>Mikrotik adalah sistem operasi dan perangkat keras yang dirancang untuk fungsi router dan firewall. Produk ini dapat digunakan untuk berbagai kebutuhan jaringan, dari jaringan kecil di rumah atau kantor hingga jaringan ISP (Internet Service Provider) skala besar. Mikrotik menyediakan solusi perangkat lunak (Mikrotik RouterOS) dan perangkat keras (RouterBoard) yang dapat dikonfigurasi untuk melakukan berbagai fungsi jaringan seperti routing, firewall, bandwidth management, VPN, dan hotspot.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Fungsi Utama Mikrotik</h2>
+        <ul>
+            <li><strong>Routing</strong>: Mengatur lalu lintas data antar jaringan.</li>
+            <li><strong>Firewall</strong>: Melindungi jaringan dari akses tidak sah dan ancaman keamanan.</li>
+            <li><strong>Bandwidth Management</strong>: Mengelola dan mengalokasikan penggunaan bandwidth pada jaringan.</li>
+            <li><strong>VPN (Virtual Private Network)</strong>: Mengamankan koneksi jaringan melalui tunneling.</li>
+            <li><strong>Hotspot</strong>: Mengelola jaringan wireless untuk koneksi publik dengan kontrol akses.</li>
+            <li><strong>QoS (Quality of Service)</strong>: Mengatur prioritas trafik jaringan.</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Tipe Lab Mikrotik</h2>
+        <div class="lab-list">
+            <div class="lab-item">
+                <h3>Basic Routing</h3>
+                <p>Lab ini digunakan untuk mempelajari dasar-dasar routing, pengenalan protokol routing, dan cara mengonfigurasi jaringan LAN atau WAN. Peserta belajar bagaimana cara membuat jaringan terhubung dan saling berkomunikasi melalui Mikrotik.</p>
+                <p><strong>Topik yang dipelajari</strong>: IP addressing, static routing, dan dynamic routing (RIP, OSPF).</p>
+                <p><strong>Contoh Pengaturan</strong>: Mengonfigurasi static route untuk menghubungkan dua jaringan.</p>
+            </div>
+            <div class="lab-item">
+                <h3>Bandwidth Management</h3>
+                <p>Lab ini berfokus pada pengaturan alokasi bandwidth penting untuk jaringan dengan sumber daya terbatas atau ketika banyak pengguna menggunakan internet secara bersamaan.</p>
+                <p><strong>Topik yang dipelajari</strong>: Queue, burst, simple queue, dan queue tree.</p>
+                <p><strong>Contoh Pengaturan</strong>: Membatasi bandwidth untuk pengguna tertentu, misalnya 2 Mbps untuk download dan 512 Kbps untuk upload.</p>
+            </div>
+            <div class="lab-item">
+                <h3>Firewall dan Keamanan Jaringan</h3>
+                <p>Firewall digunakan untuk melindungi jaringan dari serangan dan akses tidak sah. Dalam lab ini, peserta belajar mengonfigurasi filter rules, NAT (Network Address Translation), dan mangle untuk meningkatkan keamanan jaringan.</p>
+                <p><strong>Topik yang dipelajari</strong>: Chain (input, forward, output), filter rules, NAT, dan address list.</p>
+                <p><strong>Contoh Pengaturan</strong>: Blokir akses dari IP atau port tertentu untuk melindungi jaringan dari serangan.</p>
+            </div>
+            <div class="lab-item">
+                <h3>Hotspot</h3>
+                <p>Lab ini digunakan untuk membangun dan mengelola jaringan hotspot. Dalam sesi ini, peserta belajar bagaimana cara mengonfigurasi Mikrotik sebagai server hotspot untuk menyediakan akses internet publik yang dapat dikontrol.</p>
+                <p><strong>Topik yang dipelajari</strong>: Hotspot, user profiles, walled garden, bandwidth limitation, dan login pages.</p>
+                <p><strong>Contoh Pengaturan</strong>: Mengonfigurasi halaman login untuk pengguna yang ingin mengakses internet melalui jaringan hotspot.</p>
+            </div>
+            <div class="lab-item">
+                <h3>VPN Configuration</h3>
+                <p>VPN memungkinkan pengguna untuk mengakses jaringan lokal dari jarak jauh melalui internet dengan aman. Lab VPN Mikrotik berfokus pada cara membangun VPN menggunakan berbagai protokol seperti PPTP, L2TP, atau OpenVPN.</p>
+                <p><strong>Topik yang dipelajari</strong>: PPP (Point-to-Point Protocol), PPTP, L2TP, IPSec.</p>
+                <p><strong>Contoh Pengaturan</strong>: Membuat tunnel VPN untuk menghubungkan dua jaringan yang berbeda secara geografis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Konfigurasi Mikrotik</h2>
+        <h3>CLI (Command Line Interface)</h3>
+        <p>CLI adalah salah satu cara yang paling umum digunakan oleh pengguna yang berpengalaman. Dengan CLI, pengguna bisa memberikan perintah langsung melalui terminal untuk mengonfigurasi router.</p>
+        <p><strong>Contoh Perintah CLI:</strong></p>
+        <pre><code>/ip address add address=192.168.88.1/24 interface=ether1</code></pre>
+        <pre><code>/ip route add dst-address=0.0.0.0/0 gateway=192.168.88.254</code></pre>
+        
+        <h3>WebFig</h3>
+        <p>WebFig adalah antarmuka berbasis web yang memungkinkan pengguna mengakses Mikrotik RouterOS melalui browser. Dengan WebFig, pengguna dapat melakukan konfigurasi router tanpa perlu menginstal aplikasi tambahan.</p>
+
+        <h3>Winbox</h3>
+        <p>Winbox adalah aplikasi grafis untuk mengelola dan mengonfigurasi router Mikrotik secara mudah. Winbox menawarkan antarmuka yang lebih ramah pengguna dibandingkan CLI dan memungkinkan pengelolaan router dengan cara yang lebih interaktif.</p>
+
+        <h4>Langkah-langkah Menggunakan Winbox:</h4>
+        <ul>
+            <li><strong>Unduh dan Instal:</strong> Unduh aplikasi Winbox dari situs resmi Mikrotik dan jalankan.</li>
+            <li><strong>Koneksi ke Router:</strong> Router yang ada di jaringan akan terdeteksi secara otomatis pada daftar. Masukkan username dan password.</li>
+            <li><strong>Konfigurasi IP Address:</strong> Masuk ke menu IP > Addresses. Tambahkan IP address dan interface yang digunakan, misalnya 192.168.88.1/24 pada ether1.</li>
+            <li><strong>Konfigurasi DHCP:</strong> Masuk ke IP > DHCP Server untuk membuat DHCP server baru dengan interface yang digunakan dan rentang IP address untuk klien.</li>
+            <li><strong>Konfigurasi NAT:</strong> Tambahkan aturan srcnat pada IP > Firewall > NAT untuk memungkinkan NAT mengalirkan trafik dari jaringan internal ke internet.</li>
+            <li><strong>Monitoring:</strong> Gunakan tab Interfaces atau Resources untuk melihat status interface, trafik jaringan, dan penggunaan sumber daya router secara real-time.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chairul Huda Lestari, Universitas Syiah Kuala</p>
+    </footer>
+
+</body>
+</html>
