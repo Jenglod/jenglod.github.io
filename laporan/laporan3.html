@@ -14,7 +14,7 @@
         <div class="header-container">
             <h1>Laporan Praktikum III</h1>
             <h2>Sistem Paralel dan Terdistribusi</h2>
-            <p class="mikrotik-title"><strong>PANDUAN PENGINSTALAN WINBOX</strong></p>
+            <p class="mikrotik-title"><strong>PEMBUATAN AKUN DAN REPOSITORY PADA GITHUB HINGGA BERBAGI TAUTAN WEBSITE</strong></p>
             <p>Disusun oleh:</p>
             <p class="author-name"><strong>Chairul Huda Lestari | 2208001010013</strong></p>
             <p>Program Studi DIII Manajemen Informatika</p>
@@ -26,39 +26,66 @@
     </header>
 
     <section class="content-section">
-        <h2>Pengantar Winbox</h2>
-        <p>Winbox adalah aplikasi grafis yang dirancang untuk mengelola dan mengonfigurasi perangkat Mikrotik dengan cara yang mudah dan interaktif. Dengan Winbox, pengguna dapat mengakses perangkat Mikrotik melalui koneksi lokal atau remote.</p>
-    </section>
+        <h2>Pengenalan GitHub dan GitHub Pages</h2>
+        <p>GitHub adalah platform pengelolaan kode sumber yang berbasis cloud dan mendukung kolaborasi pengembangan perangkat lunak, baik secara individual maupun tim. Selain digunakan untuk version control, GitHub juga memiliki fitur <strong>GitHub Pages</strong> yang memungkinkan pengguna untuk membuat dan menghosting website statis secara gratis dari repository yang ada di akun GitHub.</p>
+        <p>GitHub Pages menggunakan file statis seperti <strong>HTML</strong>, <strong>CSS</strong>, dan <strong>JavaScript</strong> untuk membangun website, sehingga cocok untuk portofolio, blog, atau dokumentasi proyek.</p>
+        <p>Laporan ini akan membahas langkah-langkah pembuatan akun GitHub, repository, hingga publikasi website menggunakan GitHub Pages, serta cara berbagi tautan website yang telah dibuat.</p>
+    </section>    
 
     <section class="content-section">
-        <h2>Langkah-langkah Penginstalan Winbox</h2>
+        <h2>Langkah-langkah Pembuatan Akun dan Repository pada GitHub</h2>
         <ol>
-            <li><strong>Unduh Winbox:</strong> 
-                <p>Kunjungi situs resmi Mikrotik di <a href="https://mikrotik.com/download" target="_blank">halaman download Mikrotik</a>. Temukan bagian Winbox dan klik tautan untuk mengunduh file Winbox.</p>
+            <li><strong>Mendaftar Akun GitHub:</strong> 
+                <p>Kunjungi <a href="https://github.com" target="_blank">GitHub</a> dan klik tombol <em>Sign up</em> di pojok kanan atas. Isi formulir pendaftaran dengan alamat email, buat password, dan tentukan username yang diinginkan. Setelah itu, verifikasi email untuk mengaktifkan akun.</p>
             </li>
-            <li><strong>Ekstrak File:</strong> 
-                <p>Setelah diunduh, buka file ZIP yang telah diunduh. Di dalamnya Anda akan menemukan file Winbox.exe. Ekstrak file tersebut ke lokasi yang diinginkan di komputer Anda.</p>
+    
+            <li><strong>Membuat Repository Baru:</strong>
+                <p>Setelah berhasil masuk ke akun GitHub, langkah berikutnya adalah membuat repository baru. Repository ini akan menjadi tempat penyimpanan semua file yang digunakan untuk website.</p>
+                <ol type="a">
+                    <li>Klik tombol <strong>New</strong> atau <strong>Create a new repository</strong> di dashboard GitHub.</li>
+                    <li>Berikan nama repository sesuai format <strong>username.github.io</strong> (contoh: <strong>chairul.github.io</strong>), di mana <strong>username</strong> adalah username akun GitHub Anda.</li>
+                    <li>Pilih opsi <strong>Public</strong> agar repository dapat diakses oleh semua orang.</li>
+                    <li>Centang kotak <strong>Initialize this repository with a README</strong> agar GitHub membuat file README otomatis sebagai dokumentasi dasar.</li>
+                    <li>Klik tombol <strong>Create repository</strong> untuk menyimpan perubahan.</li>
+                </ol>
             </li>
-            <li><strong>Jalankan Winbox:</strong>
-                <p>Arahkan ke folder tempat Anda mengekstrak file, kemudian klik dua kali pada file Winbox.exe untuk menjalankannya.</p>
+    
+            <li><strong>Mengunggah File Website:</strong>
+                <p>Untuk membuat website di GitHub Pages, file website harus diunggah ke dalam repository yang baru dibuat. Anda dapat menggunakan file HTML, CSS, JavaScript, atau file statis lainnya.</p>
+                <ol type="a">
+                    <li>Di halaman repository, klik tombol <strong>Add file</strong> dan pilih <strong>Upload files</strong> untuk mengunggah file dari komputer Anda.</li>
+                    <li>Unggah file seperti <strong>index.html</strong> (ini adalah file utama yang akan dimuat sebagai halaman depan), serta file <strong>style.css</strong> dan <strong>script.js</strong> jika diperlukan.</li>
+                    <li>Setelah file terunggah, tambahkan pesan commit seperti "Add initial website files" dan klik <strong>Commit changes</strong>.</li>
+                </ol>
             </li>
-            <li><strong>Koneksi ke Router Mikrotik:</strong>
-                <p>Setelah Winbox terbuka, Anda akan melihat jendela login. Router Mikrotik yang terhubung ke jaringan Anda akan terdeteksi secara otomatis. Pilih router yang ingin Anda kelola.</p>
-                <p>Masukkan username dan password. Username default adalah "admin" dan password dibiarkan kosong (kosongkan saja).</p>
+    
+            <li><strong>Menyiapkan GitHub Pages:</strong>
+                <p>GitHub Pages memungkinkan Anda untuk mempublikasikan website langsung dari repository. Anda harus mengaktifkan GitHub Pages dari pengaturan repository.</p>
+                <ol type="a">
+                    <li>Klik tab <strong>Settings</strong> di halaman repository.</li>
+                    <li>Scroll ke bagian <strong>GitHub Pages</strong>, di bawah menu "Code and automation".</li>
+                    <li>Pilih branch <strong>main</strong> dan folder <strong>/root</strong> sebagai sumber konten.</li>
+                    <li>Klik tombol <strong>Save</strong> dan tunggu beberapa menit hingga GitHub Pages aktif.</li>
+                    <li>Website Anda akan tersedia di alamat: <strong>https://username.github.io</strong> (ganti <strong>username</strong> dengan username GitHub Anda).</li>
+                </ol>
             </li>
-            <li><strong>Mulai Konfigurasi:</strong>
-                <p>Setelah berhasil login, Anda dapat mulai mengonfigurasi router Mikrotik sesuai kebutuhan Anda. Winbox memiliki antarmuka grafis yang ramah pengguna yang memudahkan navigasi.</p>
+    
+            <li><strong>Mengelola dan Mengupdate Website:</strong>
+                <p>Setelah website aktif, Anda dapat melakukan perubahan atau penambahan konten dengan memperbarui file di repository. Setiap kali Anda mengunggah atau mengubah file di repository, website akan diperbarui secara otomatis oleh GitHub Pages.</p>
             </li>
         </ol>
     </section>
-
+    
     <section class="content-section">
-        <h2>Tips Penggunaan Winbox</h2>
+        <h2>Berbagi Tautan Website</h2>
+        <p>Setelah GitHub Pages aktif, Anda dapat berbagi tautan website dengan mudah. Website Anda akan tersedia di URL: <strong>https://username.github.io</strong>. Ganti <strong>username</strong> dengan username GitHub Anda.</p>
+        <p>Berikut adalah beberapa cara berbagi tautan website Anda:</p>
         <ul>
-            <li><strong>Auto-Detect Devices:</strong> Winbox secara otomatis mendeteksi perangkat Mikrotik yang terhubung dalam jaringan.</li>
-            <li><strong>Real-Time Monitoring:</strong> Anda dapat melihat statistik jaringan seperti trafik, penggunaan bandwidth, dan status CPU secara langsung.</li>
-            <li><strong>Drag-and-Drop:</strong> Mempermudah konfigurasi interface atau jaringan melalui fitur seret dan lepas.</li>
+            <li><strong>Melalui Media Sosial:</strong> Anda bisa membagikan tautan di platform media sosial seperti Instagram, Facebook, atau Twitter.</li>
+            <li><strong>Email:</strong> Kirimkan tautan tersebut melalui email kepada klien atau teman.</li>
+            <li><strong>Portofolio:</strong> Tautkan GitHub Pages di portofolio profesional Anda untuk menunjukkan kemampuan Anda dalam pengembangan web.</li>
         </ul>
+        <p>Selain itu, Anda juga dapat menambahkan domain kustom ke Git  Hub Pages jika ingin menggunakan domain pribadi.</p>
     </section>
 
     <footer>
